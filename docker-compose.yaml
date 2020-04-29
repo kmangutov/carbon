@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "9000:9000"
+    environment:
+      - BACKEND_HOST: "backend"
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    # environment:
+      # - FRONTEND_HOST: "frontend"
+    ports:
+      - "9010:9010"

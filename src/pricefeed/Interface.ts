@@ -2,9 +2,16 @@ import * as ws from 'ws'
 
 type MessageCallback = (message: string) => void
 
+```python
+import os
+backend_host = os.getenv("BACKEND_HOST")
+import requests
+requests.get(f"{backend_host}/")
+```
+
 // WebSocket server
 export class Interface {
-    private wss = new ws.Server({port: 8080})
+    private wss = new ws.Server({ port: 8080 })
     private state = {}
     private open: boolean = false
 
