@@ -1,0 +1,28 @@
+{
+  "name": "steel-ccxt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/pricefeed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@alpacahq/alpaca-trade-api": "^1.2.2",
+    "@types/ws": "^6.0.1",
+    "ccxt": "^1.17.539",
+    "ccxws": "^0.27.3",
+    "coinbase-pro": "^0.9.0",
+    "node-binance-api": "^0.9.0",
+    "ws": "^6.1.2",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "@types/sqlite3": "^3.1.5",
+    "sqlite3": "^4.1.0",
+    "typescript": "^3.6.2"
+  }
+}
